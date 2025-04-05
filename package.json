@@ -4,19 +4,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx vite-node src/app.ts"
+    "start": "npx vite-node src/app.ts",
+    "generate_api": "npx @hey-api/openapi-ts   -i db_schema.yml -o gen_api/ -c @hey-api/client-fetch"
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@hey-api/openapi-ts": "^0.66.3",
     "typescript": "^5.8.2",
     "vite-node": "^3.1.1"
   },
   "dependencies": {
+    "@hey-api/client-fetch": "^0.10.0",
     "@modelcontextprotocol/sdk": "^1.8.0",
-    "axios": "^1.8.4",
     "zod": "^3.24.2"
   }
 }

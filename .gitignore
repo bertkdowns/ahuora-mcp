@@ -1,3 +1,6 @@
 generated_api
 db_schema.yml
 node_modules
+dist
+generated_dist
+gen_api
